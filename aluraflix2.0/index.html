@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>AluraFlix</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Aluraflix
+    </h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+      alt="">
+    <p class="page-subtitle">
+      Qual seu filme favorito?
+    </p>
+    <div class="form-wrapper">
+      <button onClick="openModal()">Cadastrar filme</button>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <label for="posterFilme">Insira o poster do filme:</label>
+        <input type="text" id="posterFilme">
+        <label for="nomeFilme">Insira o nome do filme:</label>
+        <input type="text" id="nomeFilme">
+        <label for="linkFilme">Insira o trailer do filme:</label>
+        <input type="text" id="linkFilme"> <br>
+        <button onclick="submitForm()">Enviar</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div id="listaFilmes">
+    <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+
+</html>
